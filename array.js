@@ -110,3 +110,44 @@ return nums;
 
 
 console.log(zeros([0,1,0,3,12]))
+
+
+
+// problem - find the missing number 
+const missingNumber =(nums)=>{
+  const n =nums.length;
+  let count=0;
+  
+  for(let i=0;i<n+1;i++){
+      if(nums.includes(i)){
+        count++
+      }else{
+        return i;
+  }
+     }
+  }
+
+//this problem can be solved efficiently using the summation method also;
+  console.log(missingNumber([0,3,4,5,1]))
+
+
+
+
+  //to reverse an array 
+  const reversey=(arr)=>{
+    let left=0;
+    let right= arr.length -1;
+  
+    
+      while(left<right){
+         [arr[left],arr[right]]=[arr[right],arr[left]];
+  
+          left ++;
+          right--;
+      }
+  
+  
+    return arr;
+  }
+  
+  console.log(reversey([1,2,3,4]))

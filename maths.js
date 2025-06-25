@@ -200,3 +200,19 @@ const hello = (a, b) => {
 };
 
 
+const mySqrt =(x)=> {
+    
+for(i=0;i<=x;i++){
+    if(i**2==x){
+        return i;
+    }else if(i**2>x){
+        return i-1;
+    }
+
+
+
+}
+}
+
+
+console.log(mySqrt(8));
